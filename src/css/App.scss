@@ -1,0 +1,36 @@
+.root {
+    flex-grow: 1;
+    
+
+    .toolbar {
+        justify-content: space-around;
+        .menuButton {
+            margin-right: 10px;
+        }
+        .title {
+            flex-grow: 1;
+        }
+    }
+}
+
+.listView {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .list {
+        width: 100%;
+        max-width: 600px;
+    }
+    
+}
+
+.goodAvatar {
+}
+
+.averageAvatar {
+    background-color: yellow;
+}
+
+.badAvatar {
+    background-color: red;
+}
