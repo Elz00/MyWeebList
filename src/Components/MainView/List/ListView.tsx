@@ -7,6 +7,9 @@ import { withStyles } from '@material-ui/styles';
 // Models
 import MyAnimeListModel from "../../../@types/MyAnimeLIstModel";
 
+// Utils
+import * as _ from "lodash";
+
 // Other Components
 import ScoreListItem from "../../GenericComponents/List/ScoreListItem";
 
@@ -43,14 +46,10 @@ class ListView extends React.Component<Props, State> {
             <div className={classes.listView}>
                 <List className={classes.list}>
                     {this.props.data.anime.map((a:any) => (
-                        <ScoreListItem anime={a}/>
+                        <ScoreListItem anime={a} key={_.uniqueId()}/>
                     ))}
                 </List>
-                <div>
-                    
-                </div>
             </div>
-            
         )
     }
 }
