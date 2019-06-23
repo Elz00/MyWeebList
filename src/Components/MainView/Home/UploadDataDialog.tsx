@@ -35,7 +35,7 @@ interface State {
 
 }
 
-class HomeView extends React.Component<Props, State> {
+class UploadDataDialog extends React.Component<Props, State> {
 
     loadedFile: MyAnimeListModel = {} as MyAnimeListModel;
     hasNewFile: boolean = false;
@@ -87,5 +87,5 @@ class HomeView extends React.Component<Props, State> {
     }
 }
 
-export default withStyles(styles)(HomeView)
+export default withStyles(styles)(UploadDataDialog)
 
