@@ -53,8 +53,6 @@ class App extends React.Component<Props, State> {
 
   constructor(props: any) {
     super(props);
-
-    const data: any = require("../Utils/Temp/data.json");
     
     this.state = {
       mainView: ViewType.List,
